@@ -1,0 +1,97 @@
+* {
+    font-family: Arial;
+    background-color: black;
+}
+
+.wd-container {
+    height: 100vh;
+    margin-left: 16px;
+}
+
+.wd-search {
+    height: 30px;
+}
+
+.wd-search>.wd-gear {
+    color: rgb(29, 161, 242);
+    margin-right: 12px;
+    height: 100%;
+    float: right;
+    font-size: 30px;
+}
+
+input {
+    background-color: darkgrey;
+    color: white;
+    border-radius: 50px;
+    width: 90%;
+    height: 100%;
+    flex: 1;
+    position: relative;
+    border-width: 1px;
+}
+
+.wd-navigation-tab {
+    padding: 0px;
+}
+
+.wd-navigation-tab li {
+    color: rgb(110, 118, 125);
+    padding: 16px;
+    font-size: 15px;
+    display: inline;
+}
+
+.wd-navigation-tab .wd-active {
+    color: rgb(29, 161, 242);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 16px
+}
+
+.wd-divider-line {
+    color: rgb(110, 118, 125);
+    size: 5px;
+}
+
+.wd-tweet-heading-grey {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-tweet-heading-white {
+    color: white;
+    font-size: 13px;
+}
+
+.wd-tweet-white {
+    color: white;
+}
+
+.wd-tweet-padding {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.wd-image {
+    border-radius: 20px;
+    margin-right: 16px;
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+
+.wd-image-sm {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.wd-float-tweet {
+    float: left;
+}
+
+.wd-float-clear {
+    clear: both;
+    padding-bottom: 40px;
+}
