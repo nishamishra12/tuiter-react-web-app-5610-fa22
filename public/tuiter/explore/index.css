@@ -1,10 +1,11 @@
-* {
+body {
     font-family: Arial;
     background-color: black;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
 }
 
 .wd-container {
-    height: 100vh;
     margin-left: 16px;
 }
 
@@ -50,8 +51,7 @@ input {
 }
 
 .wd-divider-line {
-    color: rgb(110, 118, 125);
-    size: 5px;
+    border-color: rgb(110, 118, 125);
 }
 
 .wd-tweet-heading-grey {
