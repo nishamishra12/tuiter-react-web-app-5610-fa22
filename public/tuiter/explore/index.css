@@ -21,7 +21,6 @@ body {
     float: right;
     font-size: 30px;
     text-decoration: none;
-
 }
 
 input {
@@ -43,7 +42,7 @@ input {
     color: rgb(110, 118, 125);
     padding: 16px;
     font-size: 15px;
-    display: inline;
+    display: inline-block;
 }
 
 .wd-navigation-tab .wd-active {
