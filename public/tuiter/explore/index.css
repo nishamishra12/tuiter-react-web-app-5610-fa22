@@ -11,6 +11,7 @@ body {
 
 .wd-search {
     height: 30px;
+    margin-top: 12px;
 }
 
 .wd-search>.wd-gear {
@@ -69,8 +70,8 @@ input {
 }
 
 .wd-tweet-padding {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .wd-image {
@@ -91,7 +92,13 @@ input {
     float: left;
 }
 
+.wd-float-tweet-right {
+    float: right;
+    color: rgb(110, 118, 125);
+    margin-right: 16px;
+}
+
 .wd-float-clear {
     clear: both;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
