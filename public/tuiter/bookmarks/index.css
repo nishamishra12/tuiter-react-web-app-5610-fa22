@@ -67,7 +67,6 @@ body {
     font-size: 15px;
     margin-right:16px;
     width: 506px;
-    margin-top: 5px;
 }
 
 .wd-border-content {
@@ -104,6 +103,7 @@ body {
 
 .wd-divider-line {
     border-color: rgb(110, 118, 125);
+
 }
 
 .wd-icons-div {
@@ -127,4 +127,5 @@ body {
 
 .wd-red {
     color: red;
+    text-decoration: none;
 }
