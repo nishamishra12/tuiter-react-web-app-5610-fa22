@@ -18,9 +18,10 @@ body {
 .wd-search>.wd-gear {
     color: rgb(29, 161, 242);
     margin-right: 12px;
-    height: 100%;
     float: right;
     font-size: 30px;
+    text-decoration: none;
+
 }
 
 input {
