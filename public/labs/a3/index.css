@@ -322,7 +322,7 @@ p#id-selector-2 {
 }
 
 .gradients-radial {
-    background: radial-gradient(orange, green);
+    background: radial-gradient(orange, brown);
     width: 200px;
     height: 200px;
 }
@@ -342,7 +342,7 @@ p#id-selector-2 {
     animation-name: slidein;
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: yellow;
     color: white;
 }
 
@@ -354,7 +354,7 @@ p#id-selector-2 {
         margin-left: 100%;
         width: 200px;
         height: 200px;
-        background-color: yellow;
+        background-color: green;
         color: black;
     }
 
@@ -365,7 +365,7 @@ p#id-selector-2 {
         margin-left: 25%;
         width: 400px;
         height: 400px;
-        background-color: blue;
+        background-color: orangered;
         color: white;
     }
 
@@ -376,7 +376,7 @@ p#id-selector-2 {
         margin-left: 0%;
         width: 200px;
         height: 200px;
-        background-color: red;
+        background-color: pink;
         color: white;
     }
 }
@@ -413,6 +413,15 @@ p#id-selector-2 {
     border-style: solid;
     display: flex;
 }
+
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+ }
+ 
 
 .flex-container-end {
     border-width: 5px;
@@ -456,7 +465,14 @@ p#id-selector-2 {
     align-items: center;
 }
 
-.flex-container-flex > .flex-box {
+.flex-container-last {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.flex-container-last > .flex-box {
     flex-basis: 100%;
  }
  
@@ -473,7 +489,7 @@ p#id-selector-2 {
 @media (min-width: 600px)
    and (max-width: 1200px) {
     .media-query-div {
-    background-color: red;
+    background-color: orange;
     color: white;
   }
   .media-query {
