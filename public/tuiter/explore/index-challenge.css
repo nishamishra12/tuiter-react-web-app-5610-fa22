@@ -35,9 +35,9 @@ body {
     border-right: 1px solid rgb(47, 51, 54);
   }
 
-.col-10.search-space {
+/* .col-10.search-space {
     margin-left: 5px;
-}
+} */
 
 input {
     background-color: black;
@@ -54,4 +54,12 @@ input {
 .btn-default.white{
     background-color: white;
     color: black;
+}
+
+div> .search-space {
+    width: 90%;
+}
+
+div> .gear-padding{
+    width: 10%;
 }
