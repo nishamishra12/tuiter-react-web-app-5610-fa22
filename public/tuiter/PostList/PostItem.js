@@ -8,12 +8,12 @@ const PostItem = (post) => {
     `: '';
     let cardImgClass = (post.cardBody)? 'card-img-top': 'card-img';
     return (`
-        <li class="list-group-item bg-transparent border-0">
+        <li class="list-group-item bg-transparent border-0 p-0">
             <div class="row">
                 <div class="col-2 justify-content-start">
                     <img class="wd-img-scale-min circle-image" src=${post.profileImage} />
                 </div>
-                <div class="col-10">
+                <div class="col-10 ps-0">
                     <span class="mx-auto">
                         ${post.userName} <i class="fa fa-check-circle" aria-hidden="true"></i> <span class="text-secondary">@${post.handle} .
                         ${post.time}</span>
@@ -25,7 +25,7 @@ const PostItem = (post) => {
                     <img class=${cardImgClass} src=${post.image}>
                     ${cardText}
                     </div>
-                    <span class="row text-secondary">
+                    <span class="row text-secondary mt-1">
                         <span class="col">
                             <a><i class="fa-regular fa-comment pr-2"></i></a> &nbsp;
                             <span>${post.comment}</span>
