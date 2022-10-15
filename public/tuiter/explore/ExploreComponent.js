@@ -44,7 +44,10 @@ const ExploreComponent = () => {
                 </div>
             </div>
         </div>
-           ${PostSummaryList()}
+        <div class="mt-2 p-0">
+        ${PostSummaryList()}
+        </div>
+          
     `);
 }
 export default ExploreComponent;
