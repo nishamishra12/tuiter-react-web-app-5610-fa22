@@ -1,7 +1,7 @@
 const PostSummaryItem = (post) => {
     return (`
-    <li class="list-group-item">
-        <div class="row align-items-center">
+    <li class="list-group-item justify-content-between align-items-center">
+        <div class="row">
             <div class="col-10">
                 <span class="text-secondary">${post.topic}</span></br>
                 <span class="mx-auto fw-bold">

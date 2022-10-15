@@ -4,26 +4,15 @@
     height: 73px;
 }
 
-.post-image {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.list-group .border {
-    border-color:  rgb(47, 51, 54);
-}
-
 .float-right {
     float: right;
     color: #555555;
 }
 
-.list-group .rounded-corner {
-    border-radius: 15px;
-}
-
-.list-group .bg-color {
-    background-color: transparent;
-}
-
 a:link {text-decoration:none}
+
+.fa-stack.stacked-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}

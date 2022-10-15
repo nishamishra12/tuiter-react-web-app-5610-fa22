@@ -44,7 +44,7 @@ const ExploreComponent = () => {
                 </div>
             </div>
         </div>
-        <div class="mt-2 p-0">
+        <div class="mt-2">
         ${PostSummaryList()}
         </div>
           

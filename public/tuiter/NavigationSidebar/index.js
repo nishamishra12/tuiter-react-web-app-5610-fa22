@@ -17,7 +17,7 @@ const NavigationSidebar = (active) => {
                         <a class="list-group-item ${active === 'profile' ? 'active' : ''}" href="../profile.html"><i class="fa fa-user" aria-hidden="true"></i>
                             Profile</a>
                         <a class="list-group-item ${active === 'more' ? 'active' : ''}" href="#.html">
-                            <span class="fa-stack  stacked-icon">
+                            <span class="fa-stack stacked-icon">
                                 <i class="fas fa-circle fa-stack-1x text-white"></i>
                                 <i class="fa fa-ellipsis-h fa-stack-1x small fa-inverse text-black"></i>
                             </span> More
