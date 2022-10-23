@@ -1,5 +1,7 @@
-import
-React from "react";
+import React from "react";
+// get our fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faRetweet, faComment, faUpload, faCheckCircle } from "@fortawesome/fontawesome-free-solid";
 const PostSummaryItem = (
     {
         post = {
@@ -19,13 +21,13 @@ const PostSummaryItem = (
         }
     }
 ) => {
-    let cardText = (post.cardBody) ? 
-    <div class="card-body">
-    <h6 class="card-title">{post.postTitle}</h6>
-    <p class="card-text text-secondary">{post.postText}</p>
-    <a href="#" class="text-secondary"><i class="fa-solid fa-link"></i>{post.link}</a>
-    </div>
-    : '';
+    let cardText = (post.cardBody) ?
+        <div class="card-body">
+            <h6 class="card-title">{post.postTitle}</h6>
+            <p class="card-text text-secondary">{post.postText}</p>
+            <a href="#" class="text-secondary"><i class="fa-solid fa-link"></i>{post.link}</a>
+        </div>
+        : '';
     let cardImgClass = (post.cardBody) ? 'card-img-top' : 'card-img';
 
     return (
@@ -36,7 +38,7 @@ const PostSummaryItem = (
                 </div>
                 <div class="col-10 ps-0">
                     <div class="mx-auto">
-                        <span class="fw-bold">{post.userName}</span> <i class="fa fa-check-circle" aria-hidden="true"></i> <span class="text-secondary">@{post.handle} .
+                        <span class="fw-bold">{post.userName}</span> <FontAwesomeIcon icon={faCheckCircle}/> <span class="text-secondary">@{post.handle} .
                             {post.time}</span>
                         <span class="float-right">...</span>
                     </div>
@@ -47,19 +49,19 @@ const PostSummaryItem = (
                     </div>
                     <span class="row text-secondary mt-1">
                         <span class="col">
-                            <i class="far fa-comment pe-3"></i> &nbsp;
+                        <FontAwesomeIcon icon={faComment} /> &nbsp;
                             <span>{post.comment}</span>
                         </span>
                         <span class="col">
-                            <a><i class="fas fa-retweet"></i></a> &nbsp;
+                        <FontAwesomeIcon icon={faRetweet} /> &nbsp;
                             <span>{post.retweet}</span>
                         </span>
                         <span class="col">
-                            <a><i class="far fa-heart"></i></a> &nbsp;
+                        <FontAwesomeIcon icon={faHeart} /> &nbsp;
                             <span>{post.like}</span>
                         </span>
                         <span class="col">
-                            <a><i class="fas fa-upload"></i></a>
+                        <FontAwesomeIcon icon={faUpload} />
                         </span>
                     </span>
                 </div>
