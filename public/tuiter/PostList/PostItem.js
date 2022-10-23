@@ -18,7 +18,7 @@ const PostItem = (post) => {
                         ${post.userName} <i class="fa fa-check-circle" aria-hidden="true"></i> <span class="text-secondary">@${post.handle} .
                         ${post.time}</span>
                         <span class="float-right">...</span>
-                    </span></br>
+                    </span></br>.
                     <span>${post.title}
                     </span>
                     <div class="card bg-transparent border border-secondary">
