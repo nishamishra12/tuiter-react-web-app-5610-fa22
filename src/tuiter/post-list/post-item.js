@@ -42,7 +42,7 @@ const PostSummaryItem = (
                             {post.time}</span>
                         <span class="float-right">...</span>
                     </div>
-                    <div>{post.title} <a href="#html">{post.titleLink}</a></div>
+                    <div>{post.title}<a href="#html">{post.titleLink}</a></div>
                     <div class="card bg-transparent border border-secondary">
                         <img class={`${cardImgClass}`} src={`/images/${post.image}`} />
                         {cardText}
