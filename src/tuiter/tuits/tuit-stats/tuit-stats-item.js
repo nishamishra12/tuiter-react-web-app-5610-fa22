@@ -23,16 +23,6 @@ const TuitStatsItem = (
                         <div class="col-3">
                         <FontAwesomeIcon icon={faUpload} />
                         </div>
-            {/* <div class="col-2 justify-content-start">
-                <img class="wd-img-scale-min circle-image" src={`/images/${tuit.image}`} />
-            </div>
-            <div class="col-10 ps-0">
-                <div class="mx-auto">
-                    <span class="fw-bold">{tuit.userName}</span> <FontAwesomeIcon icon={faCheckCircle} /> <span class="text-secondary">{tuit.handle} .
-                        {tuit.time}</span>
-                </div>
-                <div>{tuit.tuit}</div>
-            </div> */}
         </div>
     );
 };
