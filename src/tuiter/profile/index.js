@@ -34,6 +34,10 @@ const ProfileComponent = () => {
                 <div className="mt-3 px-3">
                     {profile.bio}
                 </div>
+                <div className="mt-3 px-3">
+                <span className="fw-bold">Website</span><br />
+                    <span>{profile.website}</span>
+                </div>
 
                 <div className="row mt-3 px-3">
                     <div className="col-4">
