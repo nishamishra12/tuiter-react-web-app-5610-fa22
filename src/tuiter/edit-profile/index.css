@@ -1,0 +1,11 @@
+.no-border {
+    opacity: 0.65;
+    transform: scale(0.85);
+    margin: 0;
+}
+
+.edit-text {
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}

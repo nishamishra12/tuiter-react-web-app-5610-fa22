@@ -7,11 +7,8 @@ import { Link } from "react-router-dom";
 
 const ProfileComponent = () => {
     const profile = useSelector(state => state.profile);
-    console.log('rendering');
-    console.log(profile);
     return (
         <>
-            <h4>Profile</h4>
             <div className="border">
                 <div className="row px-3">
                     <div className="col-1">
@@ -23,11 +20,9 @@ const ProfileComponent = () => {
                     </div>
                 </div>
                 <div className="position-relative">
-                    <div className="card">
-                        <img src={profile.bannerPicture} />
-                        <img src={profile.profilePicture} alt="avatar" className="h-50 rounded-circle card-img-overlay mt-5 top-50"></img>
-                    </div>
-                    <Link to="/tuiter/edit-profile" className="border rounded-pill fw-bold text-black float-right mt-2 me-3">
+                    <img src={profile.bannerPicture} className="w-100"  />
+                    <img src={profile.profilePicture} alt="avatar" className="h-50 rounded-circle card-img-overlay mt-5 ms-3 top-50 border border-3 border-white"></img>
+                    <Link to="/tuiter/edit-profile" className="border rounded-pill fw-bold text-black float-right mt-2 me-3 ">
                         <span className="m-2">Edit profile</span>
                     </Link>
                 </div>
@@ -59,7 +54,7 @@ const ProfileComponent = () => {
                     <span className="fw-bold ms-4"> {profile.followersCount}</span> Followers
                 </div>
             </div>
-            <br/>
+            <br />
         </>
     );
 };
