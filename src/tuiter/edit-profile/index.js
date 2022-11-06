@@ -72,7 +72,7 @@ const EditProfileComponent = () => {
                             </FormGroup>
                             <FormGroup className="mt-3" controlId="formGroupName">
                                 <FloatingLabel id="formName" label="Bio">
-                                    <FormControl type="input"
+                                    <FormControl as="textarea" style={{height: '100%'}}
                                         defaultValue={profile.bio}
                                         onChange={(event) => {
                                             setBio(event.target.value)
