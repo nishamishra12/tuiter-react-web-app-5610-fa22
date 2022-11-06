@@ -25,9 +25,9 @@ const ProfileComponent = () => {
                 <div className="position-relative">
                     <div className="card">
                         <img src={profile.bannerPicture} />
-                        <img src={profile.profilePicture} alt="avatar" className="h-50 rounded-circle card-img-overlay m-5 top-50"></img>
+                        <img src={profile.profilePicture} alt="avatar" className="h-50 rounded-circle card-img-overlay mt-5 top-50"></img>
                     </div>
-                    <Link to="/" className="border rounded-pill fw-bold text-black float-right mt-2">
+                    <Link to="/" className="border rounded-pill fw-bold text-black float-right mt-2 me-3">
                         <span className="m-2">Edit profile</span>
                     </Link>
                 </div>
