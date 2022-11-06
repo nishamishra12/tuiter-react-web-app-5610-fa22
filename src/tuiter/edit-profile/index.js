@@ -100,17 +100,16 @@ const EditProfileComponent = () => {
                                     />
                                 </FloatingLabel>
                             </FormGroup>
-                            <div className="mt-3">
-                                <label className="no-border">Birth Date &#183;</label><a onClick={() => {
-                                    setDisableButton(false)
-                                    myFunction()
-                                }} className="edit-text">Edit</a><br/>
-                                <input style={{ border: 'none', padding: 0 }} type="text" id="dob" placeholder="Date of Birth"
-                                    defaultValue={profile.dateOfBirth} disabled={disableButton} autoFocus
-                                    onChange={(event) => {
-                                        setDateOfBirth(event.target.value)
-                                    }} />
-                            </div>
+                            <FormGroup className="mt-3" controlId="formGroupName">
+                                <FloatingLabel id="formName" label="Birth Date">
+                                    <FormControl type="input"
+                                        defaultValue={profile.dateOfBirth}
+                                        onChange={(event) => {
+                                            setDateOfBirth(event.target.value)
+                                        }}
+                                    />
+                                </FloatingLabel>
+                            </FormGroup>
                         </Form>
 
                     </div>
