@@ -9,7 +9,7 @@ const ProfileComponent = () => {
     const profile = useSelector(state => state.profile);
     return (
         <>
-            <div className="border">
+            <div className="border  ">
                 <div className="row px-3">
                     <div className="col-1">
                         <FontAwesomeIcon icon={faArrowLeft} />
