@@ -25,7 +25,6 @@ const templateTuit = {
     "dislikes": 0
 }
 
-
 const tuitsSlice = createSlice({
     name: 'tuits',
     initialState,
@@ -69,6 +68,13 @@ const tuitsSlice = createSlice({
     },
 
     reducers: {
+        createTuit(state, action) {
+            state.unshift({
+                ...action.payload,
+                ...templateTuit,
+                _id: (new Date()).getTime(),
+            })
+        },
         deleteTuit(state, action) {
             const index = state
                 .findIndex(tuit =>
@@ -76,13 +82,6 @@ const tuitsSlice = createSlice({
             state.splice(index, 1);
         },
 
-        createTuit(state, action) {
-            state.unshift({
-                ...action.payload,
-                ...templateTuit,
-                _id: (new Date()).getTime(),
-            })
-        }
     }
 
 });
