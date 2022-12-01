@@ -8,7 +8,8 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
-      tuit: whatsHappening
+      tuit: whatsHappening,
+      likes: 0,
     }
     dispatch(createTuitThunk(newTuit));
   }
